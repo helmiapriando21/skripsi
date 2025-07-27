@@ -10,6 +10,11 @@ const IMG = {
   BG_MUROTTAL: "/img/muratal-bg.svg",
   BG_ZAKAT: "/img/zakat-bg.svg",
   BG_KRITIK: "/img/kritik-bg.svg",
+  BG_ACCOUNT_MANAGEMENT: "/img/account-management-bg.svg",
+  BG_SETTING: "/img/setting.svg",
+  BG_ASET_MANAGEMENT: "/img/aset-management-bg.svg",
+  BG_ACTIVITY_MANAGEMENT: "/img/activity-management-logo.svg",
+  BG_CONTENT_MANAGEMENT: "/img/content-management-bg.svg",
 } as const;
 
 export default IMG;

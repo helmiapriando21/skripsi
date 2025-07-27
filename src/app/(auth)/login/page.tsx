@@ -1,11 +1,16 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import PrimaryButton from "@/components/PrimaryButton";
 import IMG from "@/content/img";
 import { FaChevronLeft } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 const LoginPage = () => {
+  const route = useRouter();
+
   return (
     <div
       className="min-h-screen w-full flex items-center justify-center bg-cover bg-center"
@@ -56,7 +61,14 @@ const LoginPage = () => {
           </div>
 
           {/* Login Button */}
-          <PrimaryButton className="w-full max-w-[400px]">Login</PrimaryButton>
+          <PrimaryButton
+            className="w-full max-w-[400px]"
+            onClick={() => {
+              route.push("/dashboard");
+            }}
+          >
+            Login
+          </PrimaryButton>
 
           {/* Belum punya akun */}
           <div className="text-sm text-gray-600">
